@@ -78,7 +78,7 @@ public class SignUp extends javax.swing.JFrame {
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel5.setText("ini apa");
+        jLabel5.setText("Name");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 250, -1, -1));
 
         jButton1.setBackground(new java.awt.Color(4, 120, 96));
@@ -94,7 +94,7 @@ public class SignUp extends javax.swing.JFrame {
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel6.setText("ini apa");
+        jLabel6.setText("Username");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 180, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
@@ -104,7 +104,7 @@ public class SignUp extends javax.swing.JFrame {
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel8.setText("ini apa");
+        jLabel8.setText("Password");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 320, -1, -1));
 
         jTextField3.setBackground(new java.awt.Color(255, 255, 255));
@@ -113,7 +113,7 @@ public class SignUp extends javax.swing.JFrame {
 
         jLabel9.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel9.setText("ini apa");
+        jLabel9.setText("Confirm Password");
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 390, -1, -1));
 
         jTextField4.setBackground(new java.awt.Color(255, 255, 255));

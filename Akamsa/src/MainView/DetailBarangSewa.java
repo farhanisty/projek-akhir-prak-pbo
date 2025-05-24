@@ -8,12 +8,12 @@ package MainView;
  *
  * @author ASUS
  */
-public class BeliTabel extends javax.swing.JFrame {
+public class DetailBarangSewa extends javax.swing.JFrame {
 
     /**
      * Creates new form nitip
      */
-    public BeliTabel() {
+    public DetailBarangSewa() {
         initComponents();
     }
 
@@ -31,15 +31,15 @@ public class BeliTabel extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         btnHomePage = new javax.swing.JButton();
         btnTransaksi = new javax.swing.JButton();
-        btnBeli = new javax.swing.JButton();
         btnSewa = new javax.swing.JButton();
-        btnCustomerSewa = new javax.swing.JButton();
         btnLogOut = new javax.swing.JButton();
+        btnTransaksi2 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jButton1 = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -60,22 +60,17 @@ public class BeliTabel extends javax.swing.JFrame {
         btnHomePage.setBackground(new java.awt.Color(5, 54, 44));
         btnHomePage.setFont(new java.awt.Font("Poppins", 1, 14)); // NOI18N
         btnHomePage.setText("Home Page");
-        jPanel2.add(btnHomePage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 200, 40));
+        jPanel2.add(btnHomePage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 200, 40));
 
         btnTransaksi.setBackground(new java.awt.Color(5, 54, 44));
         btnTransaksi.setFont(new java.awt.Font("Poppins", 1, 14)); // NOI18N
-        btnTransaksi.setText("Transaksi");
+        btnTransaksi.setText("Purchase Cart");
         btnTransaksi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnTransaksiActionPerformed(evt);
             }
         });
-        jPanel2.add(btnTransaksi, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 330, 200, 40));
-
-        btnBeli.setBackground(new java.awt.Color(5, 54, 44));
-        btnBeli.setFont(new java.awt.Font("Poppins", 1, 14)); // NOI18N
-        btnBeli.setText("Beli");
-        jPanel2.add(btnBeli, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 200, 40));
+        jPanel2.add(btnTransaksi, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 200, 40));
 
         btnSewa.setBackground(new java.awt.Color(5, 54, 44));
         btnSewa.setFont(new java.awt.Font("Poppins", 1, 14)); // NOI18N
@@ -85,17 +80,7 @@ public class BeliTabel extends javax.swing.JFrame {
                 btnSewaActionPerformed(evt);
             }
         });
-        jPanel2.add(btnSewa, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 200, 40));
-
-        btnCustomerSewa.setBackground(new java.awt.Color(5, 54, 44));
-        btnCustomerSewa.setFont(new java.awt.Font("Poppins", 1, 14)); // NOI18N
-        btnCustomerSewa.setText("Customer Sewa");
-        btnCustomerSewa.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCustomerSewaActionPerformed(evt);
-            }
-        });
-        jPanel2.add(btnCustomerSewa, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 290, 200, 40));
+        jPanel2.add(btnSewa, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 200, 40));
 
         btnLogOut.setBackground(new java.awt.Color(5, 54, 44));
         btnLogOut.setFont(new java.awt.Font("Poppins", 1, 14)); // NOI18N
@@ -105,54 +90,70 @@ public class BeliTabel extends javax.swing.JFrame {
                 btnLogOutActionPerformed(evt);
             }
         });
-        jPanel2.add(btnLogOut, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, 200, 40));
+        jPanel2.add(btnLogOut, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 560, 200, 40));
+
+        btnTransaksi2.setBackground(new java.awt.Color(5, 54, 44));
+        btnTransaksi2.setFont(new java.awt.Font("Poppins", 1, 14)); // NOI18N
+        btnTransaksi2.setText("Transaksi");
+        btnTransaksi2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTransaksi2ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnTransaksi2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 200, 40));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 600));
 
         jPanel3.setBackground(new java.awt.Color(240, 247, 247));
 
+        jLabel3.setFont(new java.awt.Font("Poppins", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel3.setText("Detail Barang ?");
+
         jLabel1.setFont(new java.awt.Font("Poppins", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel1.setText("Beli ?Kategori");
+        jLabel1.setText("duh apa ini pake JOptionPane(notif aja) mau beli berapa mau nyewa berapa lama");
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane1.setViewportView(jTable1);
+        jLabel4.setFont(new java.awt.Font("Poppins", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel4.setText("Nama Barang");
 
-        jButton1.setText("Tambah Barang");
+        jLabel5.setFont(new java.awt.Font("Poppins", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel5.setText("nomor hp wong e , jeneng wong e");
+
+        jLabel6.setFont(new java.awt.Font("Poppins", 1, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel6.setText("beli berapa(dibatasi stok), harga, total....... kalau sewa berarti ada tanggal");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton1)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel1)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 826, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(43, Short.MAX_VALUE))
+                .addGap(50, 50, 50)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel3))
+                .addContainerGap(68, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(38, 38, 38)
+                .addGap(45, 45, 45)
+                .addComponent(jLabel3)
+                .addGap(178, 178, 178)
+                .addComponent(jLabel4)
+                .addGap(23, 23, 23)
+                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel5)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel1)
-                .addGap(30, 30, 30)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(26, 26, 26))
+                .addContainerGap(190, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(201, 0, 900, 600));
@@ -169,13 +170,13 @@ public class BeliTabel extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnSewaActionPerformed
 
-    private void btnCustomerSewaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCustomerSewaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCustomerSewaActionPerformed
-
     private void btnLogOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogOutActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnLogOutActionPerformed
+
+    private void btnTransaksi2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTransaksi2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnTransaksi2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -194,14 +195,30 @@ public class BeliTabel extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(BeliTabel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DetailBarangSewa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(BeliTabel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DetailBarangSewa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(BeliTabel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DetailBarangSewa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(BeliTabel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DetailBarangSewa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -222,25 +239,25 @@ public class BeliTabel extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new BeliTabel().setVisible(true);
+                new DetailBarangSewa().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBeli;
-    private javax.swing.JButton btnCustomerSewa;
     private javax.swing.JButton btnHomePage;
     private javax.swing.JButton btnLogOut;
     private javax.swing.JButton btnSewa;
     private javax.swing.JButton btnTransaksi;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnTransaksi2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }
